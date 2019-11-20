@@ -14,6 +14,7 @@ setup(
             "theme.conf",
             "*.html",
             "static/sphinx-bootstrap.css_t",
+            "static/sphinx-bootstrap.js",
             "static/css/*.css",
             "static/js/*.js",
             "static/img/*",
