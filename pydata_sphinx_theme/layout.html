@@ -19,7 +19,9 @@
 
 {%- block extrahead %}
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="docsearch:language" content="en">
+    {% if language %}
+    <meta name="docsearch:language" content="{{ language }}">
+    {% endif %}
 {%- endblock %}
 
 {# Silence the sidebar's, relbar's #}
@@ -33,7 +35,7 @@
 {%- endblock %}
 {%- block content %}
     {% block docs_navbar %}
-    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main">
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"  role="navigation" aria-label="{{  _('Site navigation') }}">
       {%- include "docs-navbar.html" %}
     </nav>
     {% endblock %}
