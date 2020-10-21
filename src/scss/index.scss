@@ -22,6 +22,7 @@ $grid-breakpoints: (
 @import './base';
 @import './navbar';
 @import './admonitions';
+@import './modes';
 
 // Custom css, TODO: to be refactored in different partials
 div.deprecated {
@@ -448,4 +449,20 @@ i {
   a {
     color: #130754;
   }
+}
+
+.pst-visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+}
+
+.pst-main {
+  padding-top: 75px;
 }
