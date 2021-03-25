@@ -323,3 +323,7 @@ If you'd like these items to snap to the right of the page, use this configurati
       "navbar_align": "right"
       ...
    }
+
+.. meta::
+    :description lang=en:
+        Configuration options for pydata-sphinx-theme
